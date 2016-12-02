@@ -5,11 +5,27 @@ $(function(){
 
     $myNavItem.on("mouseover", function(){
         $(this).find("div").animate(
-            {opacity: 1}, 2000
+            {height: "100px"},
+            {queue: false,
+             duration: 500,
+             easing: "linear",
+             start: function(){
+                 $(this).css("border-width", "3px");
+             }
+            }
         );
+
     }).on("mouseleave", function(){
         $(this).find("div").animate(
-            {opacity: 0}, 2000
+            {height: "0px"},
+            {queue: false,
+             duration: 500,
+             easing: "linear",
+             complete: function(){
+                 $(this).css("border-width","0");
+             }
+            }
+
         );
     });
 });

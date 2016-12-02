@@ -43,14 +43,15 @@ nav > ul > li  {
 }
 
 nav li div {
-    opacity: 0;
     position: absolute;
     background-color: hsl(30, 100%, 90%);
-    border: 1px solid hsl(30, 100%, 80%);
+    border: 0px solid hsl(30, 100%, 80%);
     border-radius: 0 0 10px 10px;
     top:38px;
     left: 0;
     width: 200px;
+    height: 0;
+    overflow: hidden;
 }
 
 nav li:hover div{
@@ -60,3 +61,4 @@ nav li:hover div{
 nav li a{
     color: hsl(300, 100%, 20%);
 }
+
