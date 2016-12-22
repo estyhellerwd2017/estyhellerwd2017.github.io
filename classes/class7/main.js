@@ -46,4 +46,16 @@ $(function(){
         $("#mycircle").css("background", "hsl(0, "+s+"%, "+l+"%)"); //hsl(4, 40%, 50%)
         $("#mycircle").data("color","hsl(0, "+s+"%, "+l+"%)");*/
     });
+
+
+    var mySlider1 = $("#test");
+    var mySlider2 = $("#test2");
+    var myCircle = $("#circle");
+
+
+    $("#test, #test2").on("change mousemove", function(){
+        myCircle.css("background","hsl(0,"+mySlider1.val()+"%,"+mySlider2.val()+"%)");
+        myCircle.attr("data-color","hsl(0,"+mySlider1.val()+"%,"+mySlider2.val()+"%)");
+    });
+
 });

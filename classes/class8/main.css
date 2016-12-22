@@ -1,0 +1,77 @@
+div{
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+}
+
+#div1{
+    background-color: red;
+    background: linear-gradient(red, yellow);
+}
+
+#div2{
+    background-color: red;
+    background: linear-gradient(red, yellow, green, blue);
+}
+
+#div3{
+    background-color: red;
+    background: linear-gradient(red, red 20%, yellow 20%, yellow 80%, blue 80%);
+}
+
+#div4{
+    background-color: red;
+    background: linear-gradient(45deg, red, red 20%, yellow 20%, yellow 80%, blue 80%);
+}
+#div5{
+    position: relative;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+#div5::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, hsla(0, 20%, 20%, .1), hsla(0, 20%, 20%, .8));
+}
+#div6{
+    background-color: red;
+    background: radial-gradient(at top right, red, yellow);
+}
+
+#div7{
+    width: 600px;
+    background-color: red;
+    background: radial-gradient(circle closest-side, red, yellow);
+}
+
+#div8{
+    background-color: red;
+    background: repeating-linear-gradient(45deg, yellow, yellow 10px, red 10px, red 20px);
+}
+
+#div9{
+    background-color: red;
+    background: repeating-radial-gradient(circle at 0 0, #eee, #ccc 50px);
+}
+
+html{
+    background: transparent url("chocolate.jpg") no-repeat fixed 0 0 / cover;
+    position: relative;
+}
+
+html::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: hsla(40, 20%, 90%, .8);
+    z-index: -1;
+}
