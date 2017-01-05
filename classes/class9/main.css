@@ -16,6 +16,14 @@
 
 }
 
+@font-face {
+    font-family: 'modernpics';
+    src: url('modernpics.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 p {
     font-family: "20_dbregular", arial, sans-serif;
     margin: 1.2em;
@@ -50,4 +58,8 @@ body {
     padding: 0;
     margin: 0;
 
+}
+.glyph {
+    font-family: "modernpics";
+    font-size: 1.2em;
 }
