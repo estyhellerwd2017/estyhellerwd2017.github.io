@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title><?=$page_title?></title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="main.css" rel="stylesheet">
     </head>
@@ -20,25 +20,11 @@
             <div class="collapse navbar-collapse" id="myNavbar">
 
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">link 1</a></li>
-                <li><a href="#">link 2</a></li>
+                <li><a <?=($page=="page1")? "class='current'" : "" ?> href="#">homepage</a></li>
+                <li><a <?=($page=="page2")? "class='current'" : "" ?> href="#">page 2</a></li>
                 <li><a href="#">link 3</a></li>
               </ul>
             </div>
           </div>
         </nav>
         </header>
-        <main class="container-fluid">
-            <div class="row main_row">
-                <div class="col-md-8 col-xs-6">
-                    <div>here is the large one</div>
-                 </div>
-                <div class="col-md-4 col-xs-6">
-                    <div>here is the small one</div>
-                </div>
-            </div>
-        </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </body>
-</html>

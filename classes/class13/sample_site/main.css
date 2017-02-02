@@ -1,0 +1,39 @@
+.lightbox_hidden{
+    display: none;
+}
+
+.featherlight .featherlight-content{
+    background: hsl(30, 100%, 80%);
+    border: 3px solid red;
+}
+
+.myslider img{
+    max-height: 200px;
+}
+
+.rellax{
+    background: red;
+    padding: 40px;
+}
+
+.navbar{
+    background-color: aquamarine;
+    font-family: "comic sans";
+    font-size: 20px;
+}
+.navbar a{
+    color: purple;
+}
+.main_row{
+    background-color: darkslategrey;
+    padding: 10px;
+}
+.main_row > div{
+
+    padding: 20px;
+}
+.main_row > div div{
+    background-color: azure;
+    height: 200px;
+}
+.navbar-inverse .navbar-nav > li > a.current {color: purple;}
